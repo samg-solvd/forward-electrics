@@ -471,11 +471,17 @@ img { max-width: 100%; height: auto; display: block; }
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+  min-height: 320px;
+  position: relative;
 }
 .case-study-img img {
-  width: 100%;
-  height: 100%;
+  position: absolute;
+  top: -10%;
+  left: -10%;
+  width: 120%;
+  height: 150%;
   object-fit: cover;
+  object-position: center 30%;
 }
 
 /* ── CLIENTS ── */
@@ -650,8 +656,8 @@ img { max-width: 100%; height: auto; display: block; }
   .case-study-card { padding: 32px 24px; }
   .case-study-layout { grid-template-columns: 1fr; }
   .industry-card-img { object-position: center 70% !important; }
-  .case-study-img { max-height: 250px; }
-  .case-study-img img { height: 280px; object-position: center top; }
+  .case-study-img { min-height: 250px; }
+  .case-study-img img { height: 180%; object-position: center 30%; }
   .footer-inner { flex-direction: column; gap: 16px; text-align: center; }
 }
 </style>
